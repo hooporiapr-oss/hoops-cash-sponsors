@@ -1,231 +1,384 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Terms of Use — Basketball Cash Flow | Hooporia Institute Inc.</title>
-<meta name="description" content="View the Terms of Use for Basketball Cash Flow, operated by Hooporia Institute Inc., outlining user rights, responsibilities, and access policies.">
+<title>Terms of Use — Hoops Money & Hoops.cash</title>
+<meta name="description" content="Terms of Use for Hoops Money and the Hoops.cash sponsorship portal, operated by Hooporia Institute Inc." />
 <meta name="theme-color" content="#0e1116" />
 <style>
-/* Navigation links for consistency */
-.nav-links{ display:flex; gap:16px; align-items:center; margin-right:12px }
-.nav-links a{ color:#cfe2ff; }
-@media (max-width:900px){ .nav-links{ gap:12px } }
-
-:root{ --bg:#0e1116; --card:#151a22; --line:#1f2733; --text:#e8edf4; --muted:#a7b1c2; --acc1:#2dd4bf; --acc2:#60a5fa; }
-*{ box-sizing:border-box }
-body{ margin:0; background:linear-gradient(180deg,#0b0f14,#0e1116); color:var(--text); font-family:system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif }
-.wrap{ max-width:1100px; margin:0 auto; padding:0 20px }
-header{ position:sticky; top:0; z-index:10; background:rgba(10,14,20,.55); backdrop-filter:saturate(140%) blur(6px); border-bottom:1px solid var(--line) }
-.nav{ display:flex; align-items:center; justify-content:space-between; padding:14px 0 }
-.brand{ display:flex; gap:10px; align-items:center }
-/* Hooporia logo sizing */
-.logo {
-height: 42px;
-width: auto;
-border-radius: 6px;
+:root{
+--bg:#0e1116; --card:#151a22; --line:#1f2733; --text:#e8edf4; --muted:#a7b1c2;
+--accent:#2dd4bf; --accent2:#60a5fa;
 }
-@media (max-width: 600px) {
-.logo {
-height: 34px;
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+margin:0;
+font-family:system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif;
+color:var(--text);
+background:linear-gradient(180deg,#0b0f14,#0e1116);
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
 }
-}
-.title{ font-weight:800; letter-spacing:.2px }
-.badge{ font-size:12px; color:var(--muted) }
-.nav-cta a{ display:inline-block; padding:10px 14px; border-radius:10px; background:linear-gradient(90deg,var(--acc1),var(--acc2)); color:#06221f; font-weight:800; border:1px solid #1b2c3f }
-
-main{ max-width:900px; margin:28px auto; padding:0 20px }
-.card{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px; box-shadow:0 10px 26px rgba(0,0,0,.28) }
-h1{ margin:0 0 10px 0; font-size:24px }
-h2{ margin:20px 0 8px 0; font-size:18px }
-p, li{ color:var(--text); line-height:1.55; font-size:15px }
-ul{ padding-left:18px; margin:6px 0 0 0 }
-.meta{ color:var(--muted); font-size:13px; margin-bottom:8px }
-.emoji{ font-style:normal }
-a{ color:#9fc1ff; text-decoration:underline }
-/* Base */
-.nav-links a { margin-left:14px; color:var(--text); white-space:nowrap }
-.nav-links .launch{
-display:inline-block; padding:10px 14px; border-radius:10px;
-background:linear-gradient(90deg,var(--acc1),var(--acc2)); color:var(--ctaTxt); font-weight:800;
-border:1px solid #1b2c3f; margin-left:14px;
+a{color:#9fc1ff;text-decoration:underline}
+.wrap{
+max-width:1100px;
+margin:0 auto;
+padding:20px;
 }
 
-/* Mobile hamburger */
-.menu-btn{
-display:none; position:relative; width:38px; height:34px; border:1px solid #2a3b55;
-border-radius:10px; background:#0f1724; cursor:pointer; margin-left:auto;
+header{
+padding:16px 0 8px 0;
+border-bottom:1px solid var(--line);
+display:flex;
+align-items:flex-start;
+justify-content:space-between;
+gap:12px;
 }
-.menu-btn span{
-position:absolute; left:8px; right:8px; height:2px; background:#cfe2ff; border-radius:2px;
-transform-origin:center; transition:transform .25s, opacity .2s, top .25s;
+.logo-row{
+display:flex;
+align-items:center;
+gap:10px;
 }
-.menu-btn span:nth-child(1){ top:9px }
-.menu-btn span:nth-child(2){ top:16px }
-.menu-btn span:nth-child(3){ top:23px }
-.menu-btn[aria-expanded="true"] span:nth-child(1){ top:16px; transform:rotate(45deg) }
-.menu-btn[aria-expanded="true"] span:nth-child(2){ opacity:0 }
-.menu-btn[aria-expanded="true"] span:nth-child(3){ top:16px; transform:rotate(-45deg) }
-
-/* Mobile layout */
-@media (max-width: 800px){
-.logo{ height:34px }
-.badge{ display:none } /* hide subline to reduce text */
-.nav-links{
-position:fixed; top:56px; right:12px; left:12px;
-background:rgba(13,18,32,.98); border:1px solid #2a3b55; border-radius:12px;
-padding:10px; display:none; flex-direction:column; gap:6px; z-index:9999;
-box-shadow:0 14px 28px rgba(0,0,0,.45);
+.logo-row img{
+height:40px;
+width:auto;
+border-radius:6px;
 }
-.nav-links a{ margin:0; padding:10px 12px; border-radius:8px; border:1px solid transparent }
-.nav-links a:hover{ border-color:#2a3b55; background:#0b1320 }
-.nav-links.open{ display:flex }
-.menu-btn{ display:block }
+.logo-text{
+font-weight:800;
+letter-spacing:.2px;
+}
+.logo-sub{
+font-size:12px;
+color:var(--muted);
 }
 
+.lang-toggle{
+display:inline-flex;
+border-radius:999px;
+border:1px solid var(--line);
+overflow:hidden;
+margin-top:4px;
+flex-shrink:0;
+}
+.lang-toggle button{
+background:transparent;
+border:none;
+padding:6px 12px;
+font-size:12px;
+color:var(--muted);
+cursor:pointer;
+white-space:nowrap;
+}
+.lang-toggle button.active{
+background:linear-gradient(90deg,var(--accent),var(--accent2));
+color:#041214;
+font-weight:700;
+}
+
+[data-lang="en"] .lang-es{display:none}
+[data-lang="es"] .lang-en{display:none}
+
+h1{
+margin:18px 0 10px 0;
+font-size:26px;
+}
+h2{
+margin:20px 0 8px 0;
+font-size:18px;
+}
+p{
+margin:0 0 10px 0;
+color:var(--muted);
+line-height:1.6;
+font-size:14px;
+}
+ul{
+margin:0 0 12px 18px;
+padding:0;
+color:var(--muted);
+font-size:14px;
+}
+li{margin:4px 0}
+.card{
+background:var(--card);
+border:1px solid var(--line);
+border-radius:12px;
+padding:18px 18px 12px 18px;
+margin-top:18px;
+box-shadow:0 10px 26px rgba(0,0,0,.28);
+}
+.meta-line{
+font-size:13px;
+color:var(--muted);
+margin-bottom:12px;
+}
+
+.footer{
+border-top:1px solid #243047;
+color:#a7b1c2;
+font-size:13px;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+.footer a{
+color:#9fc1ff;
+text-decoration:underline;
+}
 </style>
 </head>
 <body>
-<!-- HEADER -->
+<main class="wrap">
 <header>
-<div class="wrap nav">
-<a href="/index.html" class="brand" aria-label="Go to homepage">
-<img src="/hooporia-logo.png" alt="Hooporia Institute Inc. Logo" class="logo" />
+<div class="logo-row">
+<a href="/index.html" class="brand" style="display:flex; gap:10px; align-items:center; text-decoration:none; color:inherit;">
+<img src="/images/hooporia-logo.png" alt="Hooporia Institute Inc. Logo" />
 <div>
-<div class="title">Basketball Cash Flow</div>
-<div class="badge">by Hooporia Institute Inc.</div>
+<div class="logo-text">Hoops Money</div>
+<div class="logo-sub">
+<span class="lang-en">Including the Hoops.cash sponsorship portal</span>
+<span class="lang-es">Incluyendo el portal de auspicio Hoops.cash</span>
+</div>
 </div>
 </a>
+</div>
 
-<!-- Mobile menu button -->
-<button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
-<span></span><span></span><span></span>
-</button>
-
-<nav id="site-nav" class="nav-links">
-<a href="/about.html">About</a>
-<a href="/contact.html">Contact</a>
-<a href="/sponsors.html" onclick="window.__closeNavMenu()">Sponsors</a>
-<a href="/media.html">Media</a>
-<a class="launch" href="https://cash.heybori.co">Launch App</a>
-</nav>
+<div class="lang-toggle" aria-label="Language toggle">
+<button type="button" id="btn-en" class="active">EN</button>
+<button type="button" id="btn-es">ES (PR)</button>
 </div>
 </header>
 
-<main class="wrap">
-<div class="card">
+<!-- ENGLISH TERMS -->
+<section id="terms-en" class="card">
 <h1>Terms of Use</h1>
-<div class="meta">Effective Date: <b>November 2025</b> • Last Updated: <b>November 2025</b></div>
+<p class="meta-line">
+<b>Effective Date:</b> November 2025 •
+<b>Last Updated:</b> November 2025
+</p>
 
 <h2>1. Acceptance of Terms</h2>
-<p>By accessing or using Basketball Cash Flow (the “Service”), operated by Hooporia Institute Inc., you agree to these Terms of Use and all applicable laws. If you do not agree, please do not use the Service.</p>
+<p>
+By accessing or using <b>Hoops Money</b> or the <b>Hoops.cash sponsorship portal</b> (the “Services”), you agree to these
+Terms of Use and all applicable laws and regulations. If you do not agree, please do not use the Services.
+</p>
 
-<h2>2. Description of the Service</h2>
-<p>Basketball Cash Flow provides a digital tool for teams, leagues, and programs to track income and expenses related to youth and community basketball operations. Access to the Service is restricted through secure PIN authentication managed by Hooporia Institute Inc.</p>
+<h2>2. Description of the Services</h2>
+<p>
+Hoops Money is a digital cash flow tool that helps youth basketball programs track income and expenses.
+The Hoops.cash portal provides sponsorship information and payment options that support access to Hoops Money.
+</p>
 
-<h2>3. Eligibility &amp; PIN Access</h2>
-<p>Use of the Service is intended for authorized program administrators, coaches, and financial coordinators. Each organization receives a unique PIN to protect its data. You are responsible for:</p>
+<h2>3. Eligibility & Access</h2>
+<p>
+The Services are intended for program administrators, coaches, sponsors, and authorized representatives.
+Programs may receive unique credentials or PINs. You are responsible for:
+</p>
 <ul>
-<li>Keeping your PIN confidential.</li>
-<li>Ensuring that only authorized users access your program’s data.</li>
-<li>Immediately notifying us of any unauthorized access at <a href="mailto:heyborico@gmail.com">heyborico@gmail.com</a>.</li>
+<li>Keeping your credentials and PINs confidential;</li>
+<li>Ensuring only authorized users access your program’s data; and</li>
+<li>Notifying us promptly of any suspected unauthorized access at <a href="mailto:FiatPalante@gmail.com">FiatPalante@gmail.com</a>.</li>
 </ul>
 
-<h2>4. User Data and Responsibility</h2>
-<p>All financial entries, notes, and records entered by users are their responsibility. Hooporia Institute Inc. is not liable for the accuracy, completeness, or timeliness of data provided by users.</p>
-<p>Users agree not to upload or input any illegal, harmful, or confidential third-party information.</p>
+<h2>4. User Data & Responsibility</h2>
+<p>
+All financial records, notes, and other content entered into Hoops Money are provided by you or your organization.
+Hooporia Institute Inc. is not responsible for verifying the accuracy, completeness, or timeliness of user-provided data.
+</p>
+<p>
+You agree not to submit illegal, harmful, or confidential third-party information that you are not authorized to share.
+</p>
 
-<h2>5. Ownership &amp; Intellectual Property</h2>
-<p>The Basketball Cash Flow application, its design, and related materials are the property of Hooporia Institute Inc. All rights are reserved. You may not copy, modify, reverse-engineer, or redistribute any part of the Service without written permission.</p>
+<h2>5. Ownership & Intellectual Property</h2>
+<p>
+The Services (including design, code, and related materials) are owned by Hooporia Institute Inc. All rights are reserved.
+You may not copy, modify, reverse engineer, or redistribute any part of the Services without our written permission.
+</p>
 
 <h2>6. Acceptable Use</h2>
-<p>You agree to use the Service only for lawful and intended purposes. Prohibited uses include:</p>
+<p>You agree to use the Services only for lawful and intended purposes. Prohibited uses include, but are not limited to:</p>
 <ul>
-<li>Attempting to access another organization’s data without authorization.</li>
-<li>Introducing malware, scripts, or malicious software.</li>
-<li>Using the platform for fraudulent or commercial resale purposes.</li>
+<li>Attempting to access another organization’s data without authorization;</li>
+<li>Introducing malware or other malicious code;</li>
+<li>Using the Services to conduct fraudulent or deceptive activities.</li>
 </ul>
 
-<h2>7. Availability &amp; Updates</h2>
-<p>Hooporia Institute Inc. strives to maintain continuous availability but does not guarantee uninterrupted service. We may update, modify, or temporarily suspend the Service for maintenance or improvement.</p>
+<h2>7. Availability & Changes</h2>
+<p>
+We strive to keep the Services reliable, but we do not guarantee uninterrupted or error-free operation.
+We may modify, suspend, or discontinue any part of the Services for maintenance, security, or other reasons.
+</p>
 
 <h2>8. Disclaimer of Warranties</h2>
-<p>The Service is provided “as is” and “as available.” Hooporia Institute Inc. makes no warranties, express or implied, regarding the Service’s reliability, performance, or suitability for any specific purpose.</p>
+<p>
+The Services are provided “as is” and “as available.” We make no warranties, express or implied, including but not
+limited to implied warranties of merchantability, fitness for a particular purpose, or non-infringement.
+</p>
 
 <h2>9. Limitation of Liability</h2>
-<p>To the maximum extent permitted by law, Hooporia Institute Inc. shall not be liable for any indirect, incidental, or consequential damages resulting from your use of the Service. This includes but is not limited to loss of data, income, or goodwill.</p>
+<p>
+To the fullest extent permitted by law, Hooporia Institute Inc. will not be liable for any indirect, incidental,
+consequential, or special damages arising from or related to your use of the Services, including loss of data,
+income, or goodwill.
+</p>
 
 <h2>10. Termination</h2>
-<p>We reserve the right to suspend or terminate access for any user who violates these Terms or engages in misuse of the platform.</p>
+<p>
+We may suspend or terminate access to the Services for any user or program that violates these Terms or misuses the platform.
+</p>
 
 <h2>11. Governing Law</h2>
-<p>These Terms shall be governed by and construed in accordance with the laws of the Commonwealth of Puerto Rico and the United States.</p>
+<p>
+These Terms are governed by the laws of the Commonwealth of Puerto Rico and applicable U.S. federal law,
+without regard to conflict of law principles.
+</p>
 
 <h2>12. Contact</h2>
-<p>For questions about these Terms, please contact:<br>
-<span class="emoji">📧</span> <a href="mailto:heyborico@gmail.com">heyborico@gmail.com</a><br>
-<span class="emoji">🏀</span> Hooporia Institute Inc. — Let’s Go Pa’lante
+<p>
+For questions about these Terms, contact:<br />
+📧 <a href="mailto:FiatPalante@gmail.com">FiatPalante@gmail.com</a><br />
+🏀 Hooporia Institute Inc. — Hoops Money • “Fiat Pa’lante”
 </p>
-</div>
+</section>
+
+<!-- SPANISH TERMS -->
+<section id="terms-es" class="card" style="display:none">
+<h1>Términos de Uso</h1>
+<p class="meta-line">
+<b>Fecha de vigencia:</b> noviembre 2025 •
+<b>Última actualización:</b> noviembre 2025
+</p>
+
+<h2>1. Aceptación de los Términos</h2>
+<p>
+Al acceder o utilizar <b>Hoops Money</b> o el <b>portal de auspicio Hoops.cash</b> (los “Servicios”),
+usted acepta estos Términos de Uso y todas las leyes aplicables. Si no está de acuerdo, le pedimos que no utilice los Servicios.
+</p>
+
+<h2>2. Descripción de los Servicios</h2>
+<p>
+Hoops Money es una herramienta digital para registrar ingresos y gastos de programas de baloncesto juvenil.
+El portal Hoops.cash presenta información de auspicio y opciones de pago que apoyan el acceso a Hoops Money.
+</p>
+
+<h2>3. Elegibilidad y Acceso</h2>
+<p>
+Los Servicios están dirigidos a administradores de programas, coaches, auspiciadores y representantes autorizados.
+Los programas pueden recibir credenciales o PIN únicos. Usted es responsable de:
+</p>
+<ul>
+<li>Mantener sus credenciales y PIN en confidencialidad;</li>
+<li>Asegurar que solo personas autorizadas accedan a los datos de su programa; y</li>
+<li>Notificarnos de inmediato sobre accesos no autorizados a <a href="mailto:FiatPalante@gmail.com">FiatPalante@gmail.com</a>.</li>
+</ul>
+
+<h2>4. Datos de Usuario y Responsabilidad</h2>
+<p>
+Todos los registros financieros, notas y demás contenido que se ingresa en Hoops Money son responsabilidad suya o de su organización.
+Hooporia Institute Inc. no es responsable de verificar la exactitud, totalidad o actualidad de los datos provistos por los usuarios.
+</p>
+<p>
+Usted se compromete a no subir información ilegal, dañina o confidencial de terceros que no esté autorizado a compartir.
+</p>
+
+<h2>5. Propiedad Intelectual</h2>
+<p>
+Los Servicios (incluyendo diseño, código y materiales relacionados) son propiedad de Hooporia Institute Inc.
+Todos los derechos están reservados. No se permite copiar, modificar, hacer ingeniería inversa ni redistribuir
+partes de los Servicios sin permiso escrito.
+</p>
+
+<h2>6. Uso Aceptable</h2>
+<p>Usted se compromete a usar los Servicios solo para fines legales y previstos. Entre los usos prohibidos se incluyen:</p>
+<ul>
+<li>Intentar acceder a datos de otra organización sin autorización;</li>
+<li>Introducir malware u otro código malicioso;</li>
+<li>Utilizar los Servicios para actividades fraudulentas o engañosas.</li>
+</ul>
+
+<h2>7. Disponibilidad y Cambios</h2>
+<p>
+Nos esforzamos por mantener los Servicios confiables, pero no garantizamos que serán ininterrumpidos o libres de errores.
+Podemos modificar, suspender o descontinuar cualquier parte de los Servicios por mantenimiento, seguridad u otros motivos.
+</p>
+
+<h2>8. Descargo de Responsabilidad</h2>
+<p>
+Los Servicios se ofrecen “tal cual” y “según disponibilidad”. No ofrecemos garantías, expresas o implícitas,
+incluyendo, pero sin limitarse a, garantías de comerciabilidad, adecuación para un propósito particular o no infracción.
+</p>
+
+<h2>9. Limitación de Responsabilidad</h2>
+<p>
+En la medida máxima permitida por ley, Hooporia Institute Inc. no será responsable por daños indirectos, incidentales,
+consecuentes o especiales relacionados con el uso de los Servicios, incluyendo pérdida de datos, ingresos o reputación.
+</p>
+
+<h2>10. Terminación</h2>
+<p>
+Podemos suspender o terminar el acceso a los Servicios para cualquier usuario o programa que viole estos Términos
+o haga un uso indebido de la plataforma.
+</p>
+
+<h2>11. Ley Aplicable</h2>
+<p>
+Estos Términos se rigen por las leyes del Estado Libre Asociado de Puerto Rico y la legislación federal aplicable de EE. UU.,
+sin considerar principios de conflicto de leyes.
+</p>
+
+<h2>12. Contacto</h2>
+<p>
+Para preguntas sobre estos Términos, puede contactarnos en:<br />
+📧 <a href="mailto:FiatPalante@gmail.com">FiatPalante@gmail.com</a><br />
+🏀 Hooporia Institute Inc. — Hoops Money • “Fiat Pa’lante”
+</p>
+</section>
 </main>
-  <footer style="border-top:1px solid #243047; color:#a7b1c2; font-size:13px; text-align:center; padding:20px; margin-top:40px;">
+
+<footer class="footer">
 © <script>document.write(new Date().getFullYear());</script> Hooporia Institute Inc. — All Rights Reserved.<br>
-EIN: [66-1104700] • UEI: [T411JSGE5L65]<br>
-Basketball Cash Flow is a project operated by Hooporia Institute Inc., a registered nonprofit organization dedicated to advancing youth basketball transparency and development.<br>
-<a href="privacy.html" style="color:#9fc1ff; text-decoration:underline;">Privacy Policy</a> •
-<a href="terms.html" style="color:#9fc1ff; text-decoration:underline;">Terms of Use</a> •
-<a href="mailto:heyborico@gmail.com" style="color:#9fc1ff; text-decoration:underline;">Contact Us</a>
+EIN: 66-1104700 • UEI: T411JSGE5L65<br>
+Hoops Money and the Hoops.cash sponsorship portal are operated by Hooporia Institute Inc., a nonprofit organization
+dedicated to advancing youth basketball transparency and development.<br>
+<a href="/privacy.html">Privacy Policy</a> •
+<a href="/terms.html">Terms of Use</a> •
+<a href="/sponsorship-terms.html">Sponsorship Terms</a> •
+<a href="mailto:FiatPalante@gmail.com">Contact Us</a>
 </footer>
 
 <script>
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-<script>
 (function(){
-const btn = document.querySelector('.menu-btn');
-const nav = document.getElementById('site-nav');
-if(!btn || !nav) return;
+const root = document.documentElement;
+const btnEn = document.getElementById('btn-en');
+const btnEs = document.getElementById('btn-es');
+const secEn = document.getElementById('terms-en');
+const secEs = document.getElementById('terms-es');
+const KEY = 'lang_hoops_terms';
 
-function closeMenu(){
-btn.setAttribute('aria-expanded','false');
-nav.classList.remove('open');
-document.body.style.overflow = '';
+function setLang(lang){
+root.setAttribute('data-lang', lang);
+if(lang === 'es'){
+secEn.style.display = 'none';
+secEs.style.display = 'block';
+}else{
+secEn.style.display = 'block';
+secEs.style.display = 'none';
 }
-function toggle(){
-const exp = btn.getAttribute('aria-expanded') === 'true';
-btn.setAttribute('aria-expanded', String(!exp));
-nav.classList.toggle('open', !exp);
-document.body.style.overflow = (!exp ? 'hidden' : '');
+btnEn.classList.toggle('active', lang==='en');
+btnEs.classList.toggle('active', lang==='es');
+try{ localStorage.setItem(KEY, lang); }catch(_){}
 }
 
-// Toggle open/close
-btn.addEventListener('click', toggle);
+let saved = null;
+try{ saved = localStorage.getItem(KEY); }catch(_){}
+setLang(saved === 'es' ? 'es' : 'en');
 
-// ✅ Close when any link INSIDE the nav is clicked (doesn’t affect the rest of the page)
-nav.addEventListener('click', (e)=>{
-if (e.target.closest('a')) closeMenu();
-}, true);
-
-// Esc key & outside click close
-document.addEventListener('keydown', e => { if(e.key==='Escape') closeMenu(); });
-document.addEventListener('click', e => {
-if (!nav.contains(e.target) && !btn.contains(e.target)) closeMenu();
-});
-
-// Make sure we start closed
-closeMenu();
+btnEn.addEventListener('click', ()=>setLang('en'));
+btnEs.addEventListener('click', ()=>setLang('es'));
 })();
 </script>
-<script>
-// Global nav closer that any link can call
-window.__closeNavMenu = function(){
-const btn = document.querySelector('.menu-btn');
-const nav = document.getElementById('site-nav');
-if (btn) btn.setAttribute('aria-expanded','false');
-if (nav) nav.classList.remove('open');
-document.body.style.overflow = '';
-};
-</script>
-
 </body>
 </html>
