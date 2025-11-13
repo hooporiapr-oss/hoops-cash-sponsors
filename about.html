@@ -1,115 +1,63 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>About — Hoops Money Sponsors</title>
-<meta name="description" content="Learn how sponsors and partners support Hoops Money and youth basketball programs through Hooporia Institute Inc." />
+<title>About — Hoops Cash</title>
+<meta name="description" content="About Hoops Cash, a sponsorship and community support platform operated by Hooporia Institute Inc." />
 <meta name="theme-color" content="#0e1116" />
+
 <style>
 :root{
 --bg:#0e1116; --card:#151a22; --line:#1f2733; --text:#e8edf4; --muted:#a7b1c2;
---accent:#2dd4bf; --accent2:#60a5fa;
+--acc1:#2dd4bf; --acc2:#60a5fa; --ctaTxt:#06221f;
 }
 *{box-sizing:border-box}
-html,body{height:100%}
 body{
-margin:0;
-font-family:system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif;
+margin:0; background:linear-gradient(180deg,#0b0f14,#0e1116);
 color:var(--text);
-background:linear-gradient(180deg,#0b0f14,#0e1116);
--webkit-font-smoothing:antialiased;
--moz-osx-font-smoothing:grayscale;
+font-family:system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif;
 }
-a{color:#9fc1ff;text-decoration:underline}
-.wrap{
-max-width:1100px;
-margin:0 auto;
-padding:20px;
-}
+.wrap{max-width:900px;margin:0 auto;padding:20px}
+
+/* HEADER */
 header{
-padding:16px 0 8px 0;
+text-align:left;
+padding:20px;
 border-bottom:1px solid var(--line);
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:12px;
 }
-.logo-row{
-display:flex;
-align-items:center;
-gap:10px;
-}
-.logo-row img{
-height:40px;
-width:auto;
-border-radius:6px;
+.logo{
+height:42px;width:auto;border-radius:6px;
 }
 .logo-text{
-font-weight:800;
-letter-spacing:.2px;
+font-weight:800;font-size:20px;margin-top:6px;
 }
 .logo-sub{
-font-size:12px;
-color:var(--muted);
+font-size:12px;color:var(--muted);
 }
 
 /* Language toggle */
 .lang-toggle{
-display:inline-flex;
-border-radius:999px;
-border:1px solid var(--line);
-overflow:hidden;
+display:flex;gap:8px;margin-top:12px;
 }
 .lang-toggle button{
-background:transparent;
-border:none;
-padding:6px 12px;
-font-size:12px;
-color:var(--muted);
-cursor:pointer;
+border:1px solid #2a3b55;background:#0d1320;color:#cfe2ff;
+border-radius:20px;padding:6px 12px;cursor:pointer;font-size:12px;
 }
 .lang-toggle button.active{
-background:linear-gradient(90deg,var(--accent),var(--accent2));
-color:#041214;
-font-weight:700;
+background:linear-gradient(90deg,var(--acc1),var(--acc2));color:#041214;font-weight:800;
 }
+[data-lang="en"] .lang-es{display:none}
+[data-lang="es"] .lang-en{display:none}
 
-/* Content */
-h1{
-margin:18px 0 10px 0;
-font-size:26px;
-}
-h2{
-margin:20px 0 8px 0;
-font-size:18px;
-}
-p{
-margin:0 0 10px 0;
-color:var(--muted);
-line-height:1.6;
-}
-ul{
-margin:0 0 12px 18px;
-padding:0;
-color:var(--muted);
-}
-li{margin:4px 0}
-.card{
-background:var(--card);
-border:1px solid var(--line);
-border-radius:12px;
-padding:18px 18px 16px 18px;
-margin-top:18px;
-}
-.meta-line{
-font-size:13px;
-color:var(--muted);
-margin-bottom:12px;
-}
+/* CONTENT */
+h1{font-size:26px;margin-top:20px}
+h2{font-size:20px;margin-top:20px}
+p{line-height:1.6;color:var(--muted)}
+a{color:#9fc1ff;text-decoration:underline}
 
-/* Footer */
-.footer{
+/* FOOTER */
+footer{
 border-top:1px solid #243047;
 color:#a7b1c2;
 font-size:13px;
@@ -117,176 +65,70 @@ text-align:center;
 padding:20px;
 margin-top:40px;
 }
-.footer a{
-color:#9fc1ff;
-text-decoration:underline;
-}
-
-/* Lang visibility */
-.lang-en-block{ display:block; }
-.lang-es-block{ display:none; }
-[data-lang="es"] .lang-en-block{ display:none; }
-[data-lang="es"] .lang-es-block{ display:block; }
+footer a{color:#9fc1ff}
 </style>
 </head>
-<body data-lang="en">
-<main class="wrap">
-<header>
-<div class="logo-row">
-<a href="/index.html" class="brand" style="display:flex; gap:10px; align-items:center; text-decoration:none; color:inherit;">
-<img src="/hooporia-logo.png" alt="Hooporia Institute Inc. Logo" class="logo" />
-<div>
-<div class="logo-text">Hoops Money</div>
-<div class="logo-sub">Operated by Hooporia Institute Inc.</div>
-</div>
-</a>
-</div>
 
-<div class="lang-toggle" aria-label="Language toggle">
-<button type="button" id="btn-en" class="active">EN</button>
-<button type="button" id="btn-es">ES (PR)</button>
+<body>
+<header>
+<a href="/index.html" style="text-decoration:none;color:inherit;">
+<img src="/images/hooporia-logo.png" class="logo" alt="Hooporia Institute Logo" />
+<div class="logo-text">Hoops Cash</div>
+<div class="logo-sub">Operated by Hooporia Institute Inc.</div>
+</a>
+
+<div class="lang-toggle">
+<button id="btn-en" class="active">EN</button>
+<button id="btn-es">ES (PR)</button>
 </div>
 </header>
 
-<!-- ABOUT CARD – SPONSORS / SUPPORT -->
-<section class="card">
+<main class="wrap">
+
 <!-- ENGLISH -->
-<div class="lang-en-block">
-<h1>About Hoops Money Sponsors</h1>
-<p class="meta-line">
-Hoops Money is powered by <b>Hooporia Institute Inc.</b> with the support of sponsors and partners
-who believe in transparent, sustainable youth basketball programs across Puerto Rico and beyond.
-</p>
+<div class="lang-en">
+<h1>About Hoops Cash</h1>
 
-<h2>What is Hoops Money?</h2>
-<p>
-Hoops Money is a youth basketball cash flow system that helps programs, leagues, and teams
-track income and expenses with clarity and accountability. It simplifies day-to-day finances so
-coaches can focus on coaching — not on chasing receipts.
-</p>
+<p>Hoops Cash is a sponsorship and solidarity platform created by Hooporia Institute Inc. to help fuel youth basketball programs, leagues, and community organizations. It connects businesses and supporters to real programs that need equipment, technology, and financial support.</p>
 
-<p>
-Many programs receive access to Hoops Money at little or no cost, thanks to the support of sponsors,
-in-kind partners, and mission-aligned organizations.
-</p>
+<p>Every contribution — whether financial or in-kind — strengthens the infrastructure of Puerto Rico’s basketball community and uplifts young athletes across the island.</p>
 
-<h2>Why Sponsors Matter</h2>
-<p>
-Youth basketball runs on volunteers, passion, and limited budgets. Sponsors help bridge the gap.
-Your support allows Hooporia Institute Inc. to:
-</p>
+<h2>Media & Recognition</h2>
+<p>Our work has been featured in national and international platforms, including:</p>
+
 <ul>
-<li>Grant Hoops Money access seats to community programs that need it most.</li>
-<li>Support under-resourced leagues, clubs, and nonprofit initiatives.</li>
-<li>Improve and maintain the platform season after season.</li>
-<li>Extend outreach beyond the metro areas into local communities.</li>
+<li><a href="/media.html">The Fixers — BYUtv (Arecibo Episode)</a></li>
+<li><a href="/media.html">Courts of the World Feature Article</a></li>
 </ul>
 
-<h2>Types of Support</h2>
-<p>Sponsors and partners typically support Hoops Money through:</p>
-<ul>
-<li><b>Financial sponsorships</b> that directly fund access seats and platform development.</li>
-<li><b>In-kind support</b> such as equipment, uniforms, facility upgrades, transportation, or services.</li>
-<li><b>Campaigns and activations</b> that highlight youth programs while showcasing your brand’s commitment.</li>
-</ul>
-
-<h2>Transparency & Recognition</h2>
-<p>
-Sponsors may be recognized on our sponsor pages, impact notes, or select program materials.
-We focus on clear, respectful visibility that aligns with both community values and your brand standards.
-</p>
-<p>
-Every partnership is treated as a marketing collaboration — not as a donation receipt — so that sponsors
-can position their support as a business investment in community impact.
-</p>
-
-<h2>Community First</h2>
-<p>
-Hooporia Institute Inc. prioritizes programs that are community-driven, volunteer-led, or serving
-youth in under-resourced areas. Our goal is simple: more organized programs, more sustainable seasons,
-and more pride in every gym.
-</p>
-
-<h2>Contact for Sponsorship</h2>
-<p>
-Interested in partnering with Hoops Money as a sponsor or in-kind supporter?<br />
-📧 <a href="mailto:FiatPalante@gmail.com">FiatPalante@gmail.com</a><br />
-🏀 Hooporia Institute Inc. — Hoops Money • “Fiat Pa’lante”
-</p>
+<p>Visit our full <a href="/media.html">Media Page</a> to watch, read, and explore our story — a true testament to the impact of basketball, community, and resilience.</p>
 </div>
 
-<!-- ESPAÑOL (PR) -->
-<div class="lang-es-block">
-<h1>Sobre los Auspicios de Hoops Money</h1>
-<p class="meta-line">
-Hoops Money es impulsado por <b>Hooporia Institute Inc.</b> con el apoyo de auspiciadores y aliados
-que creen en programas de baloncesto juvenil transparentes y sostenibles en Puerto Rico y más allá.
-</p>
+<!-- SPANISH -->
+<div class="lang-es">
+<h1>Sobre Hoops Cash</h1>
 
-<h2>¿Qué es Hoops Money?</h2>
-<p>
-Hoops Money es un sistema de flujo de caja para baloncesto juvenil que ayuda a programas, ligas y equipos
-a manejar ingresos y gastos con claridad y responsabilidad. Simplifica las finanzas del día a día para que
-los coaches puedan enfocarse en dirigir, no en perseguir recibos.
-</p>
+<p>Hoops Cash es una plataforma de auspicios y apoyo comunitario creada por Hooporia Institute Inc. para impulsar programas de baloncesto juvenil, ligas y organizaciones comunitarias. Conecta negocios y aliados con programas que necesitan equipo, tecnología y apoyo financiero.</p>
 
-<p>
-Muchos programas reciben acceso a Hoops Money con poco o ningún costo, gracias al apoyo de auspiciadores,
-socios en especie y organizaciones alineadas con nuestra misión.
-</p>
+<p>Cada aportación — ya sea económica o en especie — fortalece la infraestructura del baloncesto en Puerto Rico y eleva a los jóvenes atletas en toda la isla.</p>
 
-<h2>Por qué los auspiciadores son clave</h2>
-<p>
-El baloncesto juvenil se sostiene con voluntarios, pasión y presupuestos limitados. Los auspiciadores ayudan
-a cerrar esa brecha. Su apoyo permite a Hooporia Institute Inc.:
-</p>
+<h2>Medios & Reconocimiento</h2>
+<p>Nuestro trabajo ha sido destacado en plataformas nacionales e internacionales, incluyendo:</p>
+
 <ul>
-<li>Otorgar asientos de acceso a Hoops Money a programas comunitarios que más lo necesitan.</li>
-<li>Apoyar ligas, clubes y esfuerzos sin fines de lucro con pocos recursos.</li>
-<li>Mejorar y mantener la plataforma temporada tras temporada.</li>
-<li>Extender el impacto más allá del área metro hacia comunidades locales.</li>
+<li><a href="/media.html">The Fixers — BYUtv (Episodio de Arecibo)</a></li>
+<li><a href="/media.html">Artículo destacado en Courts of the World</a></li>
 </ul>
 
-<h2>Formas de apoyo</h2>
-<p>Los auspiciadores y aliados apoyan Hoops Money normalmente a través de:</p>
-<ul>
-<li><b>Auspicio económico</b> que financia directamente asientos de acceso y desarrollo de la plataforma.</li>
-<li><b>Apoyo en especie</b> como equipo deportivo, uniformes, mejoras de canchas, transporte o servicios.</li>
-<li><b>Campañas y activaciones</b> que resaltan programas juveniles y a la vez muestran el compromiso de su marca.</li>
-</ul>
-
-<h2>Transparencia y reconocimiento</h2>
-<p>
-Los auspiciadores pueden ser reconocidos en nuestras páginas de auspicio, notas de impacto o materiales
-seleccionados de programas. Buscamos una visibilidad clara y respetuosa que esté alineada con los valores
-de la comunidad y de su marca.
-</p>
-<p>
-Cada alianza se maneja como una colaboración de mercadeo — no como un recibo de donativo — para que los
-auspiciadores puedan presentar su apoyo como una inversión de negocio con impacto comunitario.
-</p>
-
-<h2>Comunidad primero</h2>
-<p>
-Hooporia Institute Inc. prioriza programas comunitarios, liderados por voluntarios o que sirven a jóvenes
-en áreas con pocos recursos. Nuestra meta es sencilla: programas más organizados, temporadas más sostenibles
-y más orgullo en cada cancha.
-</p>
-
-<h2>Contacto para auspicio</h2>
-<p>
-¿Interesado en colaborar con Hoops Money como auspiciador o aliado en especie?<br />
-📧 <a href="mailto:FiatPalante@gmail.com">FiatPalante@gmail.com</a><br />
-🏀 Hooporia Institute Inc. — Hoops Money • “Fiat Pa’lante”
-</p>
+<p>Visita nuestra <a href="/media.html">Página de Medios</a> para ver, leer y explorar nuestra historia — un verdadero testimonio del impacto del baloncesto, la comunidad y la resiliencia.</p>
 </div>
-</section>
+
 </main>
 
-<footer class="footer">
+<footer>
 © <script>document.write(new Date().getFullYear());</script> Hooporia Institute Inc. — All Rights Reserved.<br>
 EIN: 66-1104700 • UEI: T411JSGE5L65<br>
-Hoops Money is a project operated by Hooporia Institute Inc., a nonprofit organization dedicated to advancing youth basketball transparency and development.<br>
+Hoops Cash is operated by Hooporia Institute Inc., supporting youth basketball transparency and development.<br>
 <a href="/privacy.html">Privacy Policy</a> •
 <a href="/terms.html">Terms of Use</a> •
 <a href="mailto:FiatPalante@gmail.com">Contact Us</a>
@@ -294,21 +136,20 @@ Hoops Money is a project operated by Hooporia Institute Inc., a nonprofit organi
 
 <script>
 (function(){
-const root = document.body;
-const btnEn = document.getElementById('btn-en');
-const btnEs = document.getElementById('btn-es');
+const root=document.documentElement;
+const btnEn=document.getElementById('btn-en');
+const btnEs=document.getElementById('btn-es');
 
 function setLang(lang){
-root.setAttribute('data-lang', lang);
-btnEn.classList.toggle('active', lang === 'en');
-btnEs.classList.toggle('active', lang === 'es');
+root.setAttribute('data-lang',lang);
+btnEn.classList.toggle('active',lang==='en');
+btnEs.classList.toggle('active',lang==='es');
 }
 
-btnEn.addEventListener('click', () => setLang('en'));
-btnEs.addEventListener('click', () => setLang('es'));
-
-setLang('en');
+btnEn.onclick=()=>setLang('en');
+btnEs.onclick=()=>setLang('es');
 })();
 </script>
+
 </body>
 </html>
