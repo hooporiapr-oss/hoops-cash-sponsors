@@ -1,214 +1,357 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Privacy Policy — Basketball Cash Flow | Hooporia Institute Inc.</title>
-<meta name="description" content="Read the Privacy Policy for Basketball Cash Flow, operated by Hooporia Institute Inc., ensuring your data and program information remain secure and private.">
+<title>Privacy Policy — Hoops Money & Hoops.cash</title>
+<meta name="description" content="Privacy Policy for Hoops Money and the Hoops.cash sponsorship portal, operated by Hooporia Institute Inc." />
+<meta name="theme-color" content="#0e1116" />
 <style>
-:root{ --bg:#0e1116; --card:#151a22; --line:#1f2733; --text:#e8edf4; --muted:#a7b1c2; --acc1:#2dd4bf; --acc2:#60a5fa; }
-body{ margin:0; background:linear-gradient(180deg,#0b0f14,#0e1116); color:var(--text); font-family:system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif }
-.wrap{ max-width:900px; margin:0 auto; padding:20px }
-header{ background:rgba(10,14,20,.55); border-bottom:1px solid var(--line); position:sticky; top:0; backdrop-filter:saturate(140%) blur(6px) }
-.nav{ display:flex; align-items:center; justify-content:space-between; padding:14px 0 }
-.brand{ display:flex; gap:10px; align-items:center; color:inherit; text-decoration:none }
-/* Hooporia logo sizing */
-.logo {
-height: 42px;
-width: auto;
-border-radius: 6px;
+:root{
+--bg:#0e1116; --card:#151a22; --line:#1f2733; --text:#e8edf4; --muted:#a7b1c2;
+--accent:#2dd4bf; --accent2:#60a5fa;
 }
-@media (max-width: 600px) {
-.logo {
-height: 34px;
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+margin:0;
+font-family:system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif;
+color:var(--text);
+background:linear-gradient(180deg,#0b0f14,#0e1116);
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
 }
-}
-.title{ font-weight:800 }
-.badge{ font-size:12px; color:var(--muted) }
-.nav-links{ display:flex; gap:16px; align-items:center }
-.nav-links a{ color:#cfe2ff }
-.card{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px; margin-top:30px }
-h1{ font-size:24px; margin-bottom:12px }
-h2{ font-size:18px; margin-top:20px }
-p, li{ font-size:15px; line-height:1.6 }
-ul{ padding-left:20px }
-a{ color:#9fc1ff }
-footer .wrap{ text-align:center; color:#a7b1c2; font-size:13px; padding:18px 0; border-top:1px solid var(--line); margin-top:40px }
-/* Base */
-.nav-links a { margin-left:14px; color:var(--text); white-space:nowrap }
-.nav-links .launch{
-display:inline-block; padding:10px 14px; border-radius:10px;
-background:linear-gradient(90deg,var(--acc1),var(--acc2)); color:var(--ctaTxt); font-weight:800;
-border:1px solid #1b2c3f; margin-left:14px;
+a{color:#9fc1ff;text-decoration:underline}
+.wrap{
+max-width:1100px;
+margin:0 auto;
+padding:20px;
 }
 
-/* Mobile hamburger */
-.menu-btn{
-display:none; position:relative; width:38px; height:34px; border:1px solid #2a3b55;
-border-radius:10px; background:#0f1724; cursor:pointer; margin-left:auto;
+header{
+padding:16px 0 8px 0;
+border-bottom:1px solid var(--line);
+display:flex;
+align-items:flex-start;
+justify-content:space-between;
+gap:12px;
 }
-.menu-btn span{
-position:absolute; left:8px; right:8px; height:2px; background:#cfe2ff; border-radius:2px;
-transform-origin:center; transition:transform .25s, opacity .2s, top .25s;
+.logo-row{
+display:flex;
+align-items:center;
+gap:10px;
 }
-.menu-btn span:nth-child(1){ top:9px }
-.menu-btn span:nth-child(2){ top:16px }
-.menu-btn span:nth-child(3){ top:23px }
-.menu-btn[aria-expanded="true"] span:nth-child(1){ top:16px; transform:rotate(45deg) }
-.menu-btn[aria-expanded="true"] span:nth-child(2){ opacity:0 }
-.menu-btn[aria-expanded="true"] span:nth-child(3){ top:16px; transform:rotate(-45deg) }
-
-/* Mobile layout */
-@media (max-width: 800px){
-.logo{ height:34px }
-.badge{ display:none } /* hide subline to reduce text */
-.nav-links{
-position:fixed; top:56px; right:12px; left:12px;
-background:rgba(13,18,32,.98); border:1px solid #2a3b55; border-radius:12px;
-padding:10px; display:none; flex-direction:column; gap:6px; z-index:9999;
-box-shadow:0 14px 28px rgba(0,0,0,.45);
+.logo-row img{
+height:40px;
+width:auto;
+border-radius:6px;
 }
-.nav-links a{ margin:0; padding:10px 12px; border-radius:8px; border:1px solid transparent }
-.nav-links a:hover{ border-color:#2a3b55; background:#0b1320 }
-.nav-links.open{ display:flex }
-.menu-btn{ display:block }
+.logo-text{
+font-weight:800;
+letter-spacing:.2px;
+}
+.logo-sub{
+font-size:12px;
+color:var(--muted);
 }
 
+/* Language toggle */
+.lang-toggle{
+display:inline-flex;
+border-radius:999px;
+border:1px solid var(--line);
+overflow:hidden;
+margin-top:4px;
+flex-shrink:0;
+}
+.lang-toggle button{
+background:transparent;
+border:none;
+padding:6px 12px;
+font-size:12px;
+color:var(--muted);
+cursor:pointer;
+white-space:nowrap;
+}
+.lang-toggle button.active{
+background:linear-gradient(90deg,var(--accent),var(--accent2));
+color:#041214;
+font-weight:700;
+}
+
+[data-lang="en"] .lang-es{display:none}
+[data-lang="es"] .lang-en{display:none}
+
+h1{
+margin:18px 0 10px 0;
+font-size:26px;
+}
+h2{
+margin:20px 0 8px 0;
+font-size:18px;
+}
+p{
+margin:0 0 10px 0;
+color:var(--muted);
+line-height:1.6;
+font-size:14px;
+}
+ul{
+margin:0 0 12px 18px;
+padding:0;
+color:var(--muted);
+font-size:14px;
+}
+li{margin:4px 0}
+.card{
+background:var(--card);
+border:1px solid var(--line);
+border-radius:12px;
+padding:18px 18px 12px 18px;
+margin-top:18px;
+box-shadow:0 10px 26px rgba(0,0,0,.28);
+}
+.meta-line{
+font-size:13px;
+color:var(--muted);
+margin-bottom:12px;
+}
+
+.footer{
+border-top:1px solid #243047;
+color:#a7b1c2;
+font-size:13px;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+.footer a{
+color:#9fc1ff;
+text-decoration:underline;
+}
 </style>
 </head>
 <body>
+<main class="wrap">
 <header>
-<div class="wrap nav">
-<a href="/index.html" class="brand" aria-label="Go to homepage">
-<img src="/hooporia-logo.png" alt="Hooporia Institute Inc. Logo" class="logo" />
+<div class="logo-row">
+<a href="/index.html" class="brand" style="display:flex; gap:10px; align-items:center; text-decoration:none; color:inherit;">
+<img src="/images/hooporia-logo.png" alt="Hooporia Institute Inc. Logo" />
 <div>
-<div class="title">Basketball Cash Flow</div>
-<div class="badge">by Hooporia Institute Inc.</div>
+<div class="logo-text">Hoops Money</div>
+<div class="logo-sub">
+<span class="lang-en">Including the Hoops.cash sponsorship portal</span>
+<span class="lang-es">Incluyendo el portal de auspicio Hoops.cash</span>
+</div>
 </div>
 </a>
+</div>
 
-<!-- Mobile menu button -->
-<button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
-<span></span><span></span><span></span>
-</button>
-
-<nav id="site-nav" class="nav-links">
-<a href="/about.html">About</a>
-<a href="/contact.html">Contact</a>
-<a href="/sponsors.html" onclick="window.__closeNavMenu()">Sponsors</a>
-<a href="/media.html">Media</a>
-<a class="launch" href="https://cash.heybori.co">Launch App</a>
-</nav>
+<div class="lang-toggle" aria-label="Language toggle">
+<button type="button" id="btn-en" class="active">EN</button>
+<button type="button" id="btn-es">ES (PR)</button>
 </div>
 </header>
 
-<main class="wrap">
-<div class="card">
+<!-- ENGLISH PRIVACY -->
+<section id="privacy-en" class="card">
 <h1>Privacy Policy</h1>
-<p><b>Effective Date:</b> November 2025 &nbsp;|&nbsp; <b>Last Updated:</b> November 2025</p>
+<p class="meta-line">
+<b>Effective Date:</b> November 2025 •
+<b>Last Updated:</b> November 2025
+</p>
 
 <h2>1. Overview</h2>
-<p>At <b>Hoopotia Institute Inc.</b> and <b>Hooporia Institute Inc.</b>, we value your trust and are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard information when you use Basketball Cash Flow or related services under the heybori.co domain.</p>
+<p>
+This Privacy Policy explains how Hooporia Institute Inc. (“Hooporia”, “we”, “us”) collects and uses information
+when you use <b>Hoops Money</b> or the <b>Hoops.cash sponsorship portal</b> (together, the “Services”).
+</p>
 
 <h2>2. Information We Collect</h2>
+<p>We collect only the information needed to operate and improve the Services, such as:</p>
 <ul>
-<li><b>Form Submissions:</b> Name, email, and program details when requesting access.</li>
-<li><b>Usage Data:</b> Browser type, device information, and page interactions for performance improvement.</li>
-<li><b>Financial Entries:</b> Data entered into Basketball Cash Flow is stored securely and accessible only via valid PIN.</li>
+<li><b>Contact & program info:</b> When you request access, sponsor, or contact us, we may collect your name, email, and program or organization details.</li>
+<li><b>Usage data:</b> Limited technical data (browser type, device, basic interaction logs) to monitor performance and reliability.</li>
+<li><b>Financial records:</b> Income and expense entries created inside Hoops Money, associated with teams, leagues, and programs.</li>
 </ul>
+<p>
+We do <b>not</b> collect payment card numbers directly on our servers and do not use invasive tracking cookies. Online payments
+for sponsorships are handled by trusted third-party processors (such as Stripe) under their own privacy policies.
+</p>
 
 <h2>3. How We Use Information</h2>
-<p>We use collected information to:</p>
+<p>We use the information we collect to:</p>
 <ul>
-<li>Verify and issue secure PIN access.</li>
-<li>Maintain and improve service performance.</li>
-<li>Provide user support or respond to inquiries.</li>
-<li>Ensure legal and operational compliance.</li>
+<li>Operate Hoops Money for teams, leagues, and programs.</li>
+<li>Provide access and support to authorized administrators and sponsors.</li>
+<li>Monitor system reliability, security, and performance.</li>
+<li>Communicate about access, sponsorships, and important updates.</li>
 </ul>
 
 <h2>4. Data Protection</h2>
-<p>All data is securely stored on encrypted servers with limited access. We do not sell or share personal data with third parties.</p>
+<p>
+Data is stored on secure infrastructure managed by our service providers. Access is restricted to authorized systems
+and staff working on behalf of Hooporia Institute Inc. We do not sell or rent your personal information.
+</p>
 
-<h2>5. User Access & Control</h2>
-<p>Each program is protected by its own unique PIN. To modify or remove data, contact <a href="mailto:heyborico@gmail.com">heyborico@gmail.com</a>.</p>
+<h2>5. Program Data & Access</h2>
+<p>
+Each program or organization may use its own access credentials or PIN to view records in Hoops Money. Only authorized users
+should sign in and manage that data.
+</p>
+<p>
+If you want to review, correct, or request deletion of your program’s data, please contact us at
+<a href="mailto:FiatPalante@gmail.com">FiatPalante@gmail.com</a>.
+</p>
 
 <h2>6. Third-Party Services</h2>
-<ul>
-<li>Render (hosting)</li>
-<li>GitHub (development)</li>
-<li>Cognito Forms (PIN requests)</li>
-</ul>
+<p>
+We may rely on third-party tools for hosting, analytics, communication forms, and payment processing (such as Stripe for sponsorship payments).
+These providers maintain their own security and privacy practices in line with industry standards.
+</p>
 
 <h2>7. Children’s Privacy</h2>
-<p>Our services are intended for authorized adult program administrators, not children under 13.</p>
+<p>
+The Services are intended for adults acting on behalf of programs (e.g., administrators, coaches, coordinators), not for children.
+Any data about youth participants is managed and controlled by the programs themselves.
+</p>
 
-<h2>8. Policy Updates</h2>
-<p>We may update this policy periodically to reflect operational or legal changes.</p>
+<h2>8. Changes to this Policy</h2>
+<p>
+We may update this Privacy Policy to reflect operational or legal changes. When we do, we will update the “Last Updated” date above.
+Continued use of the Services after changes are posted means you accept the new version.
+</p>
 
 <h2>9. Contact</h2>
-<p>📧 <a href="mailto:heyborico@gmail.com">heyborico@gmail.com</a><br>
-🏀 Hoopotia Institute Inc. — Operated by Hooporia Institute Inc.</p>
-</div>
+<p>
+For privacy questions or requests, contact us at:<br />
+📧 <a href="mailto:FiatPalante@gmail.com">FiatPalante@gmail.com</a><br />
+🏀 Hooporia Institute Inc. — Hoops Money • “Fiat Pa’lante”
+</p>
+</section>
+
+<!-- SPANISH PRIVACY -->
+<section id="privacy-es" class="card" style="display:none">
+<h1>Política de Privacidad</h1>
+<p class="meta-line">
+<b>Fecha de vigencia:</b> noviembre 2025 •
+<b>Última actualización:</b> noviembre 2025
+</p>
+
+<h2>1. Resumen</h2>
+<p>
+Esta Política de Privacidad explica cómo Hooporia Institute Inc. (“Hooporia”, “nosotros”) recopila y utiliza información
+cuando usted usa <b>Hoops Money</b> o el <b>portal de auspicio Hoops.cash</b> (en conjunto, los “Servicios”).
+</p>
+
+<h2>2. Información que recopilamos</h2>
+<p>Recopilamos solo la información necesaria para operar y mejorar los Servicios, incluyendo:</p>
+<ul>
+<li><b>Contacto y datos del programa:</b> Cuando solicita acceso, se convierte en auspiciador o nos escribe, podemos recopilar su nombre, correo electrónico y datos de programa u organización.</li>
+<li><b>Datos de uso:</b> Información técnica limitada (tipo de navegador, dispositivo, interacciones básicas) para monitorear rendimiento y confiabilidad.</li>
+<li><b>Registros financieros:</b> Ingresos y gastos creados dentro de Hoops Money, asociados a equipos, ligas y programas.</li>
+</ul>
+<p>
+No recopilamos directamente números de tarjetas de pago en nuestros servidores y no utilizamos cookies de rastreo invasivas.
+Los pagos en línea de auspicio se manejan por procesadores de pago de confianza (como Stripe) bajo sus propias políticas de privacidad.
+</p>
+
+<h2>3. Cómo usamos la información</h2>
+<p>Utilizamos la información recopilada para:</p>
+<ul>
+<li>Operar Hoops Money para equipos, ligas y programas.</li>
+<li>Brindar acceso y apoyo a administradores y auspiciadores autorizados.</li>
+<li>Monitorear la confiabilidad, seguridad y rendimiento del sistema.</li>
+<li>Comunicarnos sobre acceso, auspicios y avisos importantes.</li>
+</ul>
+
+<h2>4. Protección de datos</h2>
+<p>
+Los datos se almacenan en infraestructura segura manejada por nuestros proveedores de servicio.
+El acceso se limita a sistemas y personal autorizado que actúan en nombre de Hooporia Institute Inc.
+No vendemos ni alquilamos su información personal.
+</p>
+
+<h2>5. Datos de programa y acceso</h2>
+<p>
+Cada programa u organización puede utilizar credenciales o PIN propios para ver sus registros en Hoops Money.
+Solo usuarios autorizados deben entrar y manejar esos datos.
+</p>
+<p>
+Si desea revisar, corregir o solicitar la eliminación de los datos de su programa, puede escribirnos a
+<a href="mailto:FiatPalante@gmail.com">FiatPalante@gmail.com</a>.
+</p>
+
+<h2>6. Servicios de terceros</h2>
+<p>
+Podemos usar herramientas de terceros para hospedaje, analítica, formularios de comunicación y procesamiento de pagos
+(como Stripe para pagos de auspicio). Estos proveedores mantienen sus propias prácticas de privacidad y seguridad
+basadas en estándares de la industria.
+</p>
+
+<h2>7. Privacidad de menores</h2>
+<p>
+Los Servicios están dirigidos a adultos que actúan en nombre de programas (administradores, coaches, coordinadores),
+no a menores. Cualquier información sobre jóvenes participantes es manejada y controlada por los propios programas.
+</p>
+
+<h2>8. Cambios a esta política</h2>
+<p>
+Podemos actualizar esta Política de Privacidad para reflejar cambios operacionales o legales.
+Al hacerlo, actualizaremos la fecha de “Última actualización”. Si continúa utilizando los Servicios después de los cambios,
+se considera que acepta la versión revisada.
+</p>
+
+<h2>9. Contacto</h2>
+<p>
+Para preguntas o solicitudes relacionadas con privacidad, puede contactarnos en:<br />
+📧 <a href="mailto:FiatPalante@gmail.com">FiatPalante@gmail.com</a><br />
+🏀 Hooporia Institute Inc. — Hoops Money • “Fiat Pa’lante”
+</p>
+</section>
 </main>
 
-<footer style="border-top:1px solid #243047; color:#a7b1c2; font-size:13px; text-align:center; padding:20px; margin-top:40px;">
+<footer class="footer">
 © <script>document.write(new Date().getFullYear());</script> Hooporia Institute Inc. — All Rights Reserved.<br>
-EIN: [66-1104700] • UEI: [T411JSGE5L65]<br>
-Basketball Cash Flow is a project operated by Hooporia Institute Inc., a registered nonprofit organization dedicated to advancing youth basketball transparency and development.<br>
-<a href="privacy.html" style="color:#9fc1ff; text-decoration:underline;">Privacy Policy</a> •
-<a href="terms.html" style="color:#9fc1ff; text-decoration:underline;">Terms of Use</a> •
-<a href="mailto:heyborico@gmail.com" style="color:#9fc1ff; text-decoration:underline;">Contact Us</a>
+EIN: 66-1104700 • UEI: T411JSGE5L65<br>
+Hoops Money and the Hoops.cash sponsorship portal are operated by Hooporia Institute Inc., a nonprofit organization
+dedicated to advancing youth basketball transparency and development.<br>
+<a href="/privacy.html">Privacy Policy</a> •
+<a href="/terms.html">Terms of Use</a> •
+<a href="/sponsorship-terms.html">Sponsorship Terms</a> •
+<a href="mailto:FiatPalante@gmail.com">Contact Us</a>
 </footer>
 
 <script>
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-<script>
 (function(){
-const btn = document.querySelector('.menu-btn');
-const nav = document.getElementById('site-nav');
-if(!btn || !nav) return;
+const root = document.documentElement;
+const btnEn = document.getElementById('btn-en');
+const btnEs = document.getElementById('btn-es');
+const secEn = document.getElementById('privacy-en');
+const secEs = document.getElementById('privacy-es');
+const KEY = 'lang_hoops_privacy';
 
-function closeMenu(){
-btn.setAttribute('aria-expanded','false');
-nav.classList.remove('open');
-document.body.style.overflow = '';
+function setLang(lang){
+root.setAttribute('data-lang', lang);
+if(lang === 'es'){
+secEn.style.display = 'none';
+secEs.style.display = 'block';
+}else{
+secEn.style.display = 'block';
+secEs.style.display = 'none';
 }
-function toggle(){
-const exp = btn.getAttribute('aria-expanded') === 'true';
-btn.setAttribute('aria-expanded', String(!exp));
-nav.classList.toggle('open', !exp);
-document.body.style.overflow = (!exp ? 'hidden' : '');
+btnEn.classList.toggle('active', lang==='en');
+btnEs.classList.toggle('active', lang==='es');
+try{ localStorage.setItem(KEY, lang); }catch(_){}
 }
 
-// Toggle open/close
-btn.addEventListener('click', toggle);
+let saved = null;
+try{ saved = localStorage.getItem(KEY); }catch(_){}
+setLang(saved === 'es' ? 'es' : 'en');
 
-// ✅ Close when any link INSIDE the nav is clicked (doesn’t affect the rest of the page)
-nav.addEventListener('click', (e)=>{
-if (e.target.closest('a')) closeMenu();
-}, true);
-
-// Esc key & outside click close
-document.addEventListener('keydown', e => { if(e.key==='Escape') closeMenu(); });
-document.addEventListener('click', e => {
-if (!nav.contains(e.target) && !btn.contains(e.target)) closeMenu();
-});
-
-// Make sure we start closed
-closeMenu();
+btnEn.addEventListener('click', ()=>setLang('en'));
+btnEs.addEventListener('click', ()=>setLang('es'));
 })();
 </script>
-<script>
-// Global nav closer that any link can call
-window.__closeNavMenu = function(){
-const btn = document.querySelector('.menu-btn');
-const nav = document.getElementById('site-nav');
-if (btn) btn.setAttribute('aria-expanded','false');
-if (nav) nav.classList.remove('open');
-document.body.style.overflow = '';
-};
-</script>
-
 </body>
 </html>
